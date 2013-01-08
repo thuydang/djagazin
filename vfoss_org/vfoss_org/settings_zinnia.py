@@ -95,7 +95,7 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-#    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
+    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -106,7 +106,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
-		#'zinnia.context_processors.version', # Optional
+		'zinnia.context_processors.version', # Optional
 )
 
 THUMBNAIL_PROCESSORS = (
