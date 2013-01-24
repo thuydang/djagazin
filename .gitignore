@@ -1,3 +1,5 @@
 vfoss_env/
 nogit/
+*.pyc
+*~
 !.gitignore
