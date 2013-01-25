@@ -43,7 +43,8 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
-SITE_ID = 2
+# change 2 when new site is created.
+SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -117,15 +118,15 @@ THUMBNAIL_PROCESSORS = (
 )
 
 CMS_TEMPLATES = (
-		('template_1.html', 'Template One'),
-		('blog.html', 'Template blog'),
+		# ('template_1.html', 'Template One'),
+		# ('blog.html', 'Template blog'),
 		('vfoss_org_v01/templates/index.html', 'vfoss_2col'),
 )
 
 ROOT_URLCONF = 'vfoss_org.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, 'templates'),
+    # os.path.join(PROJECT_DIR, 'templates'),
     os.path.join(PROJECT_DIR, 'themes'),
 )
 
@@ -171,7 +172,7 @@ JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
 JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
-CMSPLUGIN_BLOG_PLACEHOLDERS = ('first', 'second', 'third')
+CMSPLUGIN_BLOG_PLACEHOLDERS = ('blog_content', 'second', 'third')
 
 # django-guardian
 ANONYMOUS_USER_ID = '999'
