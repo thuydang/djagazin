@@ -95,7 +95,7 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-#    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
+    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -106,7 +106,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
-		#'zinnia.context_processors.version', # Optional
 )
 
 THUMBNAIL_PROCESSORS = (
@@ -126,7 +125,6 @@ CMS_TEMPLATES = (
 ROOT_URLCONF = 'vfoss_org.urls'
 
 TEMPLATE_DIRS = (
-		# templates is not used
     os.path.join(PROJECT_DIR, 'templates'),
     os.path.join(PROJECT_DIR, 'themes'),
 )
@@ -159,26 +157,24 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
-## cmsplugin-blog
-    #'cmsplugin_blog',
+# cmsplugin-blog
+    'cmsplugin_blog',
     'simple_translation',
 #'staticfiles',
     'tagging',
     'missing',
 		'guardian', # optional
 		'easy_thumbnails',
-## zinnia
-		'zinnia',
-		'cmsplugin_zinnia',
 )
 
 JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
 JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
+CMSPLUGIN_BLOG_PLACEHOLDERS = ('first', 'second', 'third')
+
 # django-guardian
 ANONYMOUS_USER_ID = '999'
-
 
 # staticfiles
 STATICFILES_FINDERS = (
@@ -186,24 +182,4 @@ STATICFILES_FINDERS = (
 		'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
-CMSPLUGIN_BLOG_PLACEHOLDERS = ('first', 'second', 'third')
-
-
-# cmsplugin_zinnia (bridge btw django-cms and django-blog-zinnia)
-CMSPLUGIN_ZINNIA_APP_MENUS = (
-	'cmsplugin_zinnia.menu.EntryMenu',
-	'cmsplugin_zinnia.menu.CategoryMenu',
-	'cmsplugin_zinnia.menu.TagMenu',
-	'cmsplugin_zinnia.menu.AuthorMenu'
-)
-
-ZINNIA_ENTRY_BASE_MODEL = 'cmsplugin_zinnia.placeholder.EntryPlaceholder'
-
-CMSPLUGIN_ZINNIA_TEMPLATES = [
-		('vfoss_org_v01/zinnia', 'zinnia_blog'),
-]
-
-CMSPLUGIN_ZINNIA_HIDE_ENTRY_MENU = True
-
 
