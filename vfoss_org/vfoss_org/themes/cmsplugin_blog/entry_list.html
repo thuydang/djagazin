@@ -20,12 +20,14 @@
 
 {% endblock %}
 
-{% block right-col %}
+{% block authors %}
+	{% render_author_links %}
+{% endblock %}
+	
+{% block archives %}
+	{% render_month_links %}
+{% endblock %}
 
-{% render_author_links %}
-
-{% render_month_links %}
-
-{% render_tag_links %}
-
+{% block tag_cloud %}
+	{% render_tag_links %}
 {% endblock %}

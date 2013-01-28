@@ -315,7 +315,7 @@ img {
 #sidebar .box .bookmarks {
     list-style-position: outside;
     list-style-type: none;
-    padding: 5px 10px 10px;
+    padding: 5px 25px 10px;
 }
 #sidebar .box .bookmarks li {
     background-position: 0 6px;
