@@ -1,11 +1,13 @@
 {% extends "cmsplugin_blog/cmsplugin_blog_base.html" %}
 {% load i18n cmsplugin_blog_tags %}
 
-{% block left-col %}
-{{ block.super }}
+
+{# block contentleft_index #}
+{% block contentleft %}
+{% block entries_list_1 %}
 
 {#<h1>{% trans "Latest entries" %}</h1>#}
-
+<h2 class="feat-title"><span>{% trans "Latest entries" %}</span></h2>
 {% with latest as object_list %}
 {% if object_list %}
    {% include "cmsplugin_blog/entry_list_include.html" %}
@@ -15,6 +17,8 @@
 {% endwith %}
 
 {% endblock %}
+{% endblock %}
+
 
 	{% block authors %}
 		{% render_author_links %}

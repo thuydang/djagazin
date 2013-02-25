@@ -1,8 +1,12 @@
 {% load i18n %}
 
-<h2>{% trans "See entries by" %}</h2>
-<div class="tags"> 
-{% for author in authors %}
-	<p><a href="{% url blog_archive_author author=author %}">{{ author }}</a></p>
-{% endfor %}
+
+<div class="widget-wrap">
+	<h3 class="widgettitle"><span>{% trans "See entries by" %}</span></h3>
+		<ul>
+			{% for author in authors %}
+			<li><a title="{{ author }}" href="{% url blog_archive_author author=author %}">{{ author }}</a></li>
+			{% endfor %}
+		</ul>
 </div>
+

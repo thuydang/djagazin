@@ -121,6 +121,8 @@ CMS_TEMPLATES = (
 		# ('template_1.html', 'Template One'),
 		# ('blog.html', 'Template blog'),
 		('vfoss_org_v01/templates/index.html', 'vfoss_2col'),
+		('ar2_v1/templates/ar2_index.html', 'ar2_2col'),
+		('wp_clear3/templates/wp_clear3_content_sidebar_wide.html', 'wp_clear3_2col'),
 )
 
 ROOT_URLCONF = 'vfoss_org.urls'

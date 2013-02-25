@@ -4,14 +4,38 @@
 		{% with entry.placeholders|choose_placeholder:"excerpt" as excerpt %}
 		<!-- begin post -->
 		<div class="{% if forloop.counter|divisibleby:2 %}e post{% else %}o post{% endif %}"> 
-			<a href="{{ title.get_absolute_url }}"><img src="{{ STATIC_URL }}vfoss_org_v01/static/images/_thumb.jpg" alt="{{ title }}"></a>
-			<h2><a href="{{ title.get_absolute_url }}">{{ title }}</a></h2>
-			<p>{{ entry.pub_date|date:"d b Y" }}<br/>
-			{{ entry|render_language_choices:request|safe }}
-			</p>
-			<p>Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.</p>
-			<p class="readmore">[ <a href="{{ title.get_absolute_url }}">read more</a> ]</p>
-			<div class="break"></div>
+
+			<div class="post clearfix" >
+				<div class="entry clearfix">
+
+					<a href="{{ title.get_absolute_url }}" rel="bookmark" title="Permanent Link to WP-Clear Tutorials Moved">		<img class="thumbnail" src="{{ STATIC_URL }}wp_clear3/static/images/def-thumb.jpg" alt="{{ title }}" title="{{ title }}"></a>
+
+					<h3 class="post-title"><a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">{{ title }}</a></h3>
+
+					<div class="meta">
+						<p>{{ entry|render_language_choices:request|safe }}</p>
+
+						<span class="meta-author">
+							<a href="http://wp-clear-new.solostreamsites.com/author/michaelpollock/" title="Posts by Michael Pollock" rel="author">the author</a> | 
+						</span> 
+
+						<span class="meta-date">
+							{{ entry.pub_date|date:"d b Y" }}
+						</span> 
+
+						<span class="meta-comments">
+							| <a href="{{ title.get_absolute_url }}/#comments" rel="bookmark" title="Comments for {{ title }}">0 Comments</a>
+						</span>
+					</div>								
+
+					<p>You can find tutorials for this theme. This is an excerpt. This guide explains how you can run virtual machines with VirtualBox 4.2 on a headless Fedora 18 server. Normally you use the VirtualBox GUI to manage your virtual machines, but a server does not have a desktop environment 
+					<strong><a href="http://www.solostream.com/category/premium-theme-tutorials/wp-clear-tutorials/">...</a></strong>.</p>
+
+					<p class="readmore"><a class="more-link" href="{{ title.get_absolute_url }}" rel="nofollow" title="Permanent Link to WP-Clear Tutorials Moved">Continue Reading</a></p>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+
 		</div>
 		<!-- end post -->
 

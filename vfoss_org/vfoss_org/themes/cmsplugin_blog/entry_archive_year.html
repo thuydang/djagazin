@@ -2,19 +2,40 @@
 
 {% load i18n cmsplugin_blog_tags %}
 
-{% block left-col %}
-{{ block.super }}
 
-<h1>{% trans "Entries for" %} {{ year }}</h1>
-<ul>
-    {% for date in date_list %}
-        <li><a href="{% url blog_archive_month year=year month=date|date:'m'  %}">{{ date|date:"F" }}</a></li>
-    {% empty %}
-        <li>{% trans "No entries for this year" %}</li>
-    {% endfor %}
-</ul>
+
+{% block contentleft %}
+
+
+<div class="clearfix" id="content">
+
+	<p id="breadcrumbs">You are here: <a href="http://wp-clear-new.solostreamsites.com">Home</a> » <a href="http://wp-clear-new.solostreamsites.com/page-templates/">Page Templates</a> » <strong>Archives by Month</strong></p>
+	<div class="banner468"><a href="#"><img alt="banner ad" src="/wp-content/themes/wp-clear/images/banner468.gif"></a></div>
+
+	<div class="post entry clearfix">
+							
+		<h1 class="page-title">{% trans "Entries for" %} {{ year }}</h1>
+
+		<div class="archive-content" id="archives-month">
+
+			<ul class="archives-by-cat">
+			    {% for date in date_list %}
+			        <li><a href="{% url blog_archive_month year=year month=date|date:'m'  %}">{{ date|date:"F" }}</a></li>
+			    {% empty %}
+			        <li>{% trans "No entries for this year" %}</li>
+			    {% endfor %}
+			</ul>
+			
+		</div>
+
+	</div>
+
+</div>
 
 {% endblock %}
+
+
+
 
 {% block right-col %}
 
