@@ -9,7 +9,7 @@
 
 		<p id="breadcrumbs">You are here: <a href="http://wp-clear-new.solostreamsites.com/">Home</a> » <a href="http://wp-clear-new.solostreamsites.com/category/articles/">Articles</a> » <strong>Another Full-Width Featured Image</strong></p>
 		<div class="banner468">
-<a href="#"><img src="Another%20Full-Width%20Featured%20Image%20:%20WP-Clear%20%E2%80%93%20Premium%20Responsive%20WordPress%20Magazine%20Theme_details_files/banner468.gif" alt="banner ad"></a></div>
+			<a href="#"><img src="{{ STATIC_URL }}wp_clear3/static/images/banner468.gif" alt="banner ad"></a></div>
 
 
 		<div class="post" id="post-main-280">
@@ -33,17 +33,20 @@
 					<span class="meta-comments">
 						| <a href="http://wp-clear-new.solostreamsites.com/2011/03/another-full-width-featured-image/#comments" rel="bookmark" title="Comments for Another Full-Width Featured Image">0 Comments</a>
 					</span>
-				
 				</div>
-				
+
+				{% with object.placeholders|choose_placeholder:"blog_excerpt" as excerpt %}
+				{% render_placeholder excerpt %}
+				{% endwith %}
+
 				{% with object.placeholders|choose_placeholder:"blog_content" as content %}
 				{% render_placeholder content %}
 				{% endwith %}
-				
-				{% with object.placeholders|choose_placeholder:"second" as second_content %}
-				    {% render_placeholder second_content %}
+
+				{% with object.placeholders|choose_placeholder:"blog_plugin" as plugin %}
+				    {% render_placeholder plugin %}
 				{% endwith %}
-				
+
 				<p class="tags"><strong>Tags: </strong> <a href="http://wp-clear-new.solostreamsites.com/tag/featured/" rel="tag">featured</a>, <a href="http://wp-clear-new.solostreamsites.com/tag/full-image/" rel="tag">full-image</a></p>                <p class="cats"><strong>Category</strong>: <a href="http://wp-clear-new.solostreamsites.com/category/articles/" title="View all posts in Articles" rel="category tag">Articles</a></p>
 
 			</div> <!-- entry -->

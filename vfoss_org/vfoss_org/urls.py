@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('cms.urls')),
 		# url(r'^blog/', include('zinnia.urls')),
+		url(r'^blog/', include('cmsplugin_blog.urls')),
 		url(r'^comments/', include('django.contrib.comments.urls')),
 )
 

@@ -14,6 +14,18 @@ from simple_translation.utils import get_translation_filter_language
 
 register = template.Library()
 
+# blog post widget
+@register.inclusion_tag('cmsplugin_blog/entry_list_1_snippet.html', takes_context=True)
+def render_entries_widget(context):
+    request = context["request"]
+    language = get_language_from_request(request)
+    kw = get_translation_filter_language(Entry, language)
+
+    return {
+        'entries': Entry.published.filter(**kw),
+    }
+
+
 @register.inclusion_tag('cmsplugin_blog/month_links_snippet.html', takes_context=True)
 def render_month_links(context):
     request = context["request"]

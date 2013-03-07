@@ -174,7 +174,7 @@ JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
 JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
-CMSPLUGIN_BLOG_PLACEHOLDERS = ('blog_content', 'second', 'third')
+CMSPLUGIN_BLOG_PLACEHOLDERS = ('blog_excerpt', 'blog_plugin', 'blog_content')
 
 # django-guardian
 ANONYMOUS_USER_ID = '999'

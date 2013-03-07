@@ -1,7 +1,7 @@
 {% load i18n placeholder_tags cmsplugin_blog_tags simple_translation_tags %}
 {% for entry in object_list|annotate_with_translations %}
     {% with entry|get_preferred_translation_from_request:request as title %}
-		{% with entry.placeholders|choose_placeholder:"excerpt" as excerpt %}
+		{% with entry.placeholders|choose_placeholder:"blog_excerpt" as excerpt %}
 		<!-- begin post -->
 		<div class="{% if forloop.counter|divisibleby:2 %}e post{% else %}o post{% endif %}"> 
 
@@ -28,8 +28,10 @@
 						</span>
 					</div>								
 
-					<p>You can find tutorials for this theme. This is an excerpt. This guide explains how you can run virtual machines with VirtualBox 4.2 on a headless Fedora 18 server. Normally you use the VirtualBox GUI to manage your virtual machines, but a server does not have a desktop environment 
-					<strong><a href="http://www.solostream.com/category/premium-theme-tutorials/wp-clear-tutorials/">...</a></strong>.</p>
+
+					<p>
+						{% render_placeholder excerpt %}
+					</p>
 
 					<p class="readmore"><a class="more-link" href="{{ title.get_absolute_url }}" rel="nofollow" title="Permanent Link to WP-Clear Tutorials Moved">Continue Reading</a></p>
 					<div style="clear:both;"></div>
@@ -39,7 +41,6 @@
 		</div>
 		<!-- end post -->
 
-		{% render_placeholder excerpt %}
 		{% endwith %}
 		{% endwith %}
 		{% endfor %}
