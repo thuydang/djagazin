@@ -1,5 +1,8 @@
 vfoss_env/
 nogit/
+cmsplugin_news/
+cmsplugin-news/
 *.pyc
+*.swp
 *~
 !.gitignore

@@ -5,7 +5,7 @@
 		<h3 class="widgettitle"><span><a href="/blog">{% trans "VFOSS Blog" %}</a></span></h3>
 		<div class="cat-posts-widget textwidget">
 		
-			{% for entry in entries|annotate_with_translations %}
+			{% for entry in blog_entries|annotate_with_translations %}
 			{% with entry|get_preferred_translation_from_request:request as title %}
 				{% with entry.placeholders|choose_placeholder:"blog_excerpt" as excerpt %}
 
@@ -15,7 +15,7 @@
 					<a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">
 						<img class="thumbnail" src="/static/wp_clear3/static/images/iStock_000004964402Small-150x150.jpg" alt="{{ title }}" title="{{ title }}">
 					</a>
-					<p class="post-title"><a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">{{ entry.title }}</a></p>
+					<p class="post-title"><a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">{{ title }}</a></p>
 					<p>{% render_placeholder excerpt %}</p>
 				</div> 
 

@@ -11,11 +11,6 @@
 {# empty #}
 {% endblock %}
 
-{% block entries_widget %}
-{% render_entries_widget %}
-{% endblock %}
-
-
 {# contentrigth #}
 
 {% block subscribebox %}
@@ -61,6 +56,22 @@
 		</div>
 	</div>
 </div>
-{% endblock %}							
+{% endblock subscribebox %}							
+
+{% block entries_widget %}
+  {% get_latest_entries 3 as blog_entries %}
+  {% if blog_entries %}
+		{% include "cmsplugin_blog/widget_latest_entry_include.html" %}
+	{% else %}
+		<p>{% trans "No entries" %}</p>
+	{% endif %}
+{% endblock entries_widget %}
+
+
+{% block featured_post_widget %}
+{% endblock %}
+
+{% block featured_page_widget %}
+{% endblock %}
 
 

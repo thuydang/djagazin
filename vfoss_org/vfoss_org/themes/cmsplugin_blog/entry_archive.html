@@ -20,6 +20,17 @@
 {% endblock %}
 
 
+{# block contentright #}
+
+{% block entries_widget %}
+  {% get_latest_entries 3 as blog_entries %}
+  {% if blog_entries %}
+    {# include "cmsplugin_blog/widget_latest_entry_include.html" #}
+  {% else %}
+    <p>{% trans "No entries" %}</p>
+  {% endif %}
+{% endblock entries_widget %}
+
 	{% block authors %}
 		{% render_author_links %}
 	{% endblock %}

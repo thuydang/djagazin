@@ -1,4 +1,5 @@
 import datetime
+from django.template import Library, Node
 from django.conf import settings
 from django import template
 from django.contrib.auth import models as auth_models
@@ -14,15 +15,37 @@ from simple_translation.utils import get_translation_filter_language
 
 register = template.Library()
 
+# http://www.b-list.org/weblog/2006/jun/07/django-tips-write-better-template-tags/
 # blog post widget
+@register.tag
+def get_latest_entries(parser, token):
+  bits = token.contents.split()
+  if len(bits) != 4:
+    raise TemplateSyntaxError, "(cmsplugin_blog) get_latest_entries tag takes exactly 3 arguments)"
+  if bits[2] != 'as':
+    raise TemplateSyntaxError, "second argument to the get_latest_links tag must be 'as'"
+  return LatestEntriesNode(bits[1], bits[3])
+
+class LatestEntriesNode(Node):
+  def __init__(self, num, varname):
+    self.num, self.varname = num, varname
+
+  def render(self, context):
+    request = context["request"]
+    language = get_language_from_request(request)
+    kw = get_translation_filter_language(Entry, language)
+    context[self.varname] = Entry.published.filter(**kw)[:self.num]
+    return ''
+
+
 @register.inclusion_tag('cmsplugin_blog/entry_list_1_snippet.html', takes_context=True)
-def render_entries_widget(context):
+def render_entries_widget(context, entry_num):
     request = context["request"]
     language = get_language_from_request(request)
     kw = get_translation_filter_language(Entry, language)
 
     return {
-        'entries': Entry.published.filter(**kw),
+        'entries': Entry.published.filter(**kw)[0:entry_num],
     }
 
 
