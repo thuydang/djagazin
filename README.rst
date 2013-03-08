@@ -20,48 +20,51 @@ Setup plugins
 *  Put dest-dir on PYTHONPATH otherwise there is error message.
 
 ::
+
   (vfoss_env)[td@localhost vfoss_org]$ export PYTHONPATH=/home/td/workspace/vfossorg_pj/vfoss_org/ <-- dest_dir
   (vfoss_env)[td@localhost vfoss_org]$ python setup.py install --install-purelib=dest_dir
 
 * Resulting folder structure:
+
 ::
-vfossorg_pj
-├── cmsplugin-news
-│   ├── build
-│   ├── cmsplugin_news
-│   ├── cmsplugin_news.egg-info
-│   ├── dist
-│   ├── LICENSE.txt
-│   ├── MANIFEST.in
-│   ├── README.rst
-│   ├── runtests.py
-│   ├── setup.py
-│   ├── test_setup
-│   └── tox.ini
-├── docs
-│   └── ...
-├── LICENSE.txt
-├── MANIFEST.in
-├── nogit
-│   └── ...
-├── README.md
-├── README.rst
-├── vfoss_env
-│   └── ...
-└── vfoss_org
-    ├── apache
-    ├── cmsplugin_blog
-    ├── cmsplugin_blog-1.1.2-py2.7.egg-info
-    ├── cmsplugin_news-0.4.1-py2.7.egg
-    ├── django_mptt-0.5.2-py2.7.egg-info
-    ├── easy-install.pth
-    ├── git_repo_bitbucket
-    ├── manage.py
-    ├── mptt
-    ├── requirements
-    ├── site.py
-    ├── site.pyc
+
+  vfossorg_pj
+    ├── cmsplugin-news
+    │   ├── build
+    │   ├── cmsplugin_news
+    │   ├── cmsplugin_news.egg-info
+    │   ├── dist
+    │   ├── LICENSE.txt
+    │   ├── MANIFEST.in
+    │   ├── README.rst
+    │   ├── runtests.py
+    │   ├── setup.py
+    │   ├── test_setup
+    │   └── tox.ini
+    ├── docs
+    │   └── ...
+    ├── LICENSE.txt
+    ├── MANIFEST.in
+    ├── nogit
+    │   └── ...
+    ├── README.md
+    ├── README.rst
+    ├── vfoss_env
+    │      └── ...
     └── vfoss_org
+        ├── apache
+        ├── cmsplugin_blog
+        ├── cmsplugin_blog-1.1.2-py2.7.egg-info
+        ├── cmsplugin_news-0.4.1-py2.7.egg
+        ├── django_mptt-0.5.2-py2.7.egg-info
+        ├── easy-install.pth
+        ├── git_repo_bitbucket
+        ├── manage.py
+        ├── mptt
+        ├── requirements
+        ├── site.py
+        ├── site.pyc
+        └── vfoss_org
 
 
 
