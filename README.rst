@@ -17,11 +17,15 @@ Setup plugins
 -------------
 * Checkout the plugins to a working directory (for dev, test..). Couldbe inside vfossorg_pj
 
-* Put dest-dir on PYTHONPATH otherwise there is error message.
+*  Put dest-dir on PYTHONPATH otherwise there is error message.
+
+```
 (vfoss_env)[td@localhost vfoss_org]$ export PYTHONPATH=/home/td/workspace/vfossorg_pj/vfoss_org/ <-- dest_dir
 (vfoss_env)[td@localhost vfoss_org]$ python setup.py install --install-purelib=dest_dir
+```
 
 * Resulting folder structure:
+```
 vfossorg_pj
 ├── cmsplugin-news
 │   ├── build
@@ -60,6 +64,7 @@ vfossorg_pj
     ├── site.pyc
     └── vfoss_org
 
+```
 
 
 Last tested with
