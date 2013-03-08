@@ -10,7 +10,8 @@ Setup
 
 * Checkout vfossorg project (this project): git clone https://thuydang@bitbucket.org/thuydang/vfossorg_pj
 * Checkout and install additional plugins. e.g. cmsplugin_news, etc.
-
+  * https://thuydang@bitbucket.org/thuydang/cmsplugin-news
+  * https://thuydang@bitbucket.org/thuydang/cmsplugin-projects
 
 Last tested with
 ----------------
