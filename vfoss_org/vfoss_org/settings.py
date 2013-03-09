@@ -97,6 +97,8 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
+		'debug_toolbar.middleware.DebugToolbarMiddleware',
+
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -168,6 +170,10 @@ INSTALLED_APPS = (
     'missing',
 		'guardian', # optional
 		'easy_thumbnails',
+# cmsplugin-news
+		'cmsplugin_news',
+# debug-toolbar
+		'debug_toolbar',
 )
 
 JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
@@ -186,3 +192,5 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
+# debug-toolbar
+INTERNAL_IPS = ('127.0.0.1',)
