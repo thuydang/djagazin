@@ -180,7 +180,10 @@ JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
 JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
+# cmsplugin-blog
 CMSPLUGIN_BLOG_PLACEHOLDERS = ('blog_excerpt', 'blog_plugin', 'blog_content')
+
+# cmsplugin-news
 
 # django-guardian
 ANONYMOUS_USER_ID = '999'
@@ -194,3 +197,7 @@ STATICFILES_FINDERS = (
 
 # debug-toolbar
 INTERNAL_IPS = ('127.0.0.1',)
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TEMPLATE_CONTEXT': True,
+}
