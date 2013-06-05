@@ -1,0 +1,4 @@
+djagazin
+========
+
+django based magazin
