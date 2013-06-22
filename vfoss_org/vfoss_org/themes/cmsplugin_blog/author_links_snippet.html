@@ -1,12 +1,9 @@
 {% load i18n %}
 
 
-<div class="widget-wrap">
-	<h3 class="widgettitle"><span>{% trans "See entries by" %}</span></h3>
 		<ul>
 			{% for author in authors %}
 			<li><a title="{{ author }}" href="{% url blog_archive_author author=author %}">{{ author }}</a></li>
 			{% endfor %}
 		</ul>
-</div>
 

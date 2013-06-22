@@ -2,7 +2,8 @@
 {% load i18n cmsplugin_blog_tags %}
 
 
-{# block contentleft_index #}
+{# block contentleft #}
+
 {% block contentleft %}
 {% block entries_list_1 %}
 
@@ -22,16 +23,17 @@
 
 {# block contentright #}
 
+{# render list of news entries #}
 {% block entries_widget %}
-  {% get_latest_entries 3 as blog_entries %}
-  {% if blog_entries %}
+  {% get_latest_entries 4 as news_entries %}
+  {% if news_entries %}
     {# include "cmsplugin_blog/widget_latest_entry_include.html" #}
   {% else %}
     <p>{% trans "No entries" %}</p>
   {% endif %}
 {% endblock entries_widget %}
 
-	{% block authors %}
+	{% block authors_list %}
 		{% render_author_links %}
 	{% endblock %}
 	

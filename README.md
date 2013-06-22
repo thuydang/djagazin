@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 News plugin for django-cms 2.x
 ===============================
 
@@ -42,3 +43,9 @@ History
 
 0.2a/0.1a5:
     * Adds excerpt to news model
+=======
+djagazin
+========
+
+django based magazin
+>>>>>>> 4f879d16ae40740b45976abeb7772447da1a37dc
