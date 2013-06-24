@@ -42,7 +42,7 @@ if ON_OPENSHIFT:
 						'PORT': '',
         }
     }
-		connect('djagazin',
+		conneect('djagazin',
             username=os.environ['OPENSHIFT_MONGODB_DB_USERNAME'],
             password=os.environ['OPENSHIFT_MONGODB_DB_PASSWORD'],
             host=os.environ['OPENSHIFT_MONGODB_DB_HOST'],
