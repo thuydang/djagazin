@@ -5,6 +5,12 @@ gettext = lambda s: s
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
+
+# a setting to determine whether we are running on OpenShift
+ON_OPENSHIFT = False
+if os.environ.has_key('OPENSHIFT_REPO_DIR'):
+    ON_OPENSHIFT = True
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -17,20 +23,36 @@ MANAGERS = ADMINS
 LANGUAGES = [('en', 'en')]
 DEFAULT_LANGUAGE = 0
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_DIR, 'mycms.db'),
-        #'ENGINE': 'django.db.backends.mysql',
-        #'NAME': 'thuydang_vfosscms',
-				#'USER': 'vfosscmsdb',
-				#'PASSWORD': 'vfosscmsdb',
-				#'HOST': '',
-				#'PORT': '',
+if ON_OPENSHIFT:
+# os.environ['OPENSHIFT_DB_*'] variables can be used with databases created
+    # with rhc-ctl-app (see /README in this git repo)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': os.environ['OPENSHIFT_APP_NAME'], # Or path to database file if using sqlite3.
+            'USER': os.environ['OPENSHIFT_DB_USERNAME'], # Not used with sqlite3.
+            'PASSWORD': os.environ['OPENSHIFT_DB_PASSWORD'], # Not used with sqlite3.
+            'HOST': os.environ['OPENSHIFT_DB_HOST'], # Set to empty string for localhost. Not used with sqlite3.
+            'PORT': os.environ['OPENSHIFT_DB_PORT'], # Set to empty string for default. Not used with sqlite3.
+        }
     }
-}
+else:
+	# Use this for your local settings.
 
-# Local time zone for this installation. Choices can be found here:
+		DATABASES = {
+				'default': {
+					'ENGINE': 'django.db.backends.sqlite3',
+					'NAME': os.path.join(PROJECT_DIR, 'mycms.db'),
+					#'ENGINE': 'django.db.backends.mysql',
+					#'NAME': 'thuydang_vfosscms',
+					#'USER': 'vfosscmsdb',
+					#'PASSWORD': 'vfosscmsdb',
+					#'HOST': '',
+					#'PORT': '',
+					}
+		}
+
+		# Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # On Unix systems, a value of None will cause Django to use the same
@@ -127,7 +149,7 @@ CMS_TEMPLATES = (
 		('wp_clear3/templates/wp_clear3_content_sidebar_wide.html', 'wp_clear3_2col'),
 )
 
-ROOT_URLCONF = 'vfoss_org.urls'
+ROOT_URLCONF = 'djagazin.urls'
 
 TEMPLATE_DIRS = (
     # os.path.join(PROJECT_DIR, 'templates'),
