@@ -1,0 +1,16 @@
+{% load cms_tags sekizai_tags %}
+<html>
+  <head>
+      {% render_block "css" %}
+  </head>
+  <body>
+			{% cms_toolbar %}
+			base.html
+      {% placeholder content %}
+      {% block content %}ph content{% endblock %}
+
+      {% placeholder base_ph %}
+      {% block base_ph %}ph base{% endblock %}
+      {% render_block "js" %}
+  </body>
+</html>
