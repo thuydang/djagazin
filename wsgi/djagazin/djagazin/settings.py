@@ -34,36 +34,36 @@ if ON_OPENSHIFT:
             #'PASSWORD': os.environ['OPENSHIFT_DB_PASSWORD'], # Not used with sqlite3.
             #'HOST': os.environ['OPENSHIFT_DB_HOST'], # Set to empty string for localhost. Not used with sqlite3.
             #'PORT': os.environ['OPENSHIFT_DB_PORT'], # Set to empty string for default. Not used with sqlite3.
-						'ENGINE': 'django.db.backends.sqlite3',
-						'NAME': os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'sqlite3.db'),
-						'USER': '',
-						'PASSWORD': '',
-						'HOST': '',
-						'PORT': '',
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'sqlite3.db'),
+            'USER': '',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
         }
     }
-		conneect('djagazin',
+    connect('djagazin',
             username=os.environ['OPENSHIFT_MONGODB_DB_USERNAME'],
             password=os.environ['OPENSHIFT_MONGODB_DB_PASSWORD'],
             host=os.environ['OPENSHIFT_MONGODB_DB_HOST'],
             port=int(os.environ['OPENSHIFT_MONGODB_DB_PORT']))
 else:
-	# Use this for your local settings.
+  # Use this for your local settings.
 
-		DATABASES = {
-				'default': {
-					'ENGINE': 'django.db.backends.sqlite3',
-					'NAME': os.path.join(PROJECT_DIR, 'mycms.db'),
-					#'ENGINE': 'django.db.backends.mysql',
-					#'NAME': 'thuydang_vfosscms',
-					#'USER': 'vfosscmsdb',
-					#'PASSWORD': 'vfosscmsdb',
-					#'HOST': '',
-					#'PORT': '',
-					}
-		}
+    DATABASES = {
+        'default': {
+          'ENGINE': 'django.db.backends.sqlite3',
+          'NAME': os.path.join(PROJECT_DIR, 'mycms.db'),
+          #'ENGINE': 'django.db.backends.mysql',
+          #'NAME': 'thuydang_vfosscms',
+          #'USER': 'vfosscmsdb',
+          #'PASSWORD': 'vfosscmsdb',
+          #'HOST': '',
+          #'PORT': '',
+          }
+    }
 
-		# Local time zone for this installation. Choices can be found here:
+    # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # On Unix systems, a value of None will cause Django to use the same
@@ -115,8 +115,8 @@ TEMPLATE_LOADERS = (
 )
 
 STATICFILES_DIRS = (
-	#os.path.join(PROJECT_DIR, 'static_dev'),
-	os.path.join(PROJECT_DIR, 'themes'),
+  #os.path.join(PROJECT_DIR, 'static_dev'),
+  os.path.join(PROJECT_DIR, 'themes'),
 )
 
 MIDDLEWARE_CLASSES = (
@@ -130,12 +130,12 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
-		'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-	'django.contrib.auth.context_processors.auth',
+  'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.i18n',
     'django.core.context_processors.request',
     'django.core.context_processors.media',
@@ -145,19 +145,19 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 THUMBNAIL_PROCESSORS = (
-	'easy_thumbnails.processors.colorspace',
-	'easy_thumbnails.processors.autocrop',
-	#'easy_thumbnails.processors.scale_and_crop',
-	'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-	'easy_thumbnails.processors.filters',
+  'easy_thumbnails.processors.colorspace',
+  'easy_thumbnails.processors.autocrop',
+  #'easy_thumbnails.processors.scale_and_crop',
+  'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+  'easy_thumbnails.processors.filters',
 )
 
 CMS_TEMPLATES = (
-		# ('template_1.html', 'Template One'),
-		# ('blog.html', 'Template blog'),
-		('vfoss_org_v01/templates/index.html', 'vfoss_2col'),
-		('ar2_v1/templates/ar2_index.html', 'ar2_2col'),
-		('wp_clear3/templates/wp_clear3_content_sidebar_wide.html', 'wp_clear3_2col'),
+    # ('template_1.html', 'Template One'),
+    # ('blog.html', 'Template blog'),
+    ('vfoss_org_v01/templates/index.html', 'vfoss_2col'),
+    ('ar2_v1/templates/ar2_index.html', 'ar2_2col'),
+    ('wp_clear3/templates/wp_clear3_content_sidebar_wide.html', 'wp_clear3_2col'),
 )
 
 ROOT_URLCONF = 'djagazin.urls'
@@ -201,12 +201,12 @@ INSTALLED_APPS = (
 #'staticfiles',
     'tagging',
     'missing',
-		'guardian', # optional
-		'easy_thumbnails',
+    'guardian', # optional
+    'easy_thumbnails',
 # cmsplugin-news
-		'cmsplugin_news',
+    'cmsplugin_news',
 # debug-toolbar
-		'debug_toolbar',
+    'debug_toolbar',
 )
 
 JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
@@ -223,8 +223,8 @@ ANONYMOUS_USER_ID = '999'
 
 # staticfiles
 STATICFILES_FINDERS = (
-		'django.contrib.staticfiles.finders.FileSystemFinder',
-		'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
