@@ -194,7 +194,7 @@ INSTALLED_APPS = (
 ##
     'cms.plugins.link',
     'cms.plugins.snippet',
-    'cms.plugins.googlemap',
+    #'cms.plugins.googlemap',
     'sekizai',
 # cmsplugin-blog
     'cmsplugin_blog',
