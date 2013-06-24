@@ -41,6 +41,7 @@ setup(name='YourAppName', version='1.0',
 												'simple-translation==0.8.6',
 												'django-debug-toolbar==0.9.4',
 												'wsgiref==0.1.2',
-												# cmsplugin-blog==1.1.2 external # django-mptt==0.5.4 external
+												# cmsplugin-blog==1.1.2 external 
+												'django-mptt==0.5.2',
 												],
 			)
