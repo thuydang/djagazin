@@ -11,6 +11,7 @@ setup(name='YourAppName', version='1.0',
                         #  'MySQL-python',
                         #  'pymongo',
                         #  'psycopg2',
+												'mongoengine',
 												# django cms reqiremnts
 												'Django==1.4.2',
 												'BeautifulSoup==3.2.1',
