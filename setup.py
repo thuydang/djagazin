@@ -11,5 +11,7 @@ setup(name='YourAppName', version='1.0',
                         #  'MySQL-python',
                         #  'pymongo',
                         #  'psycopg2',
+												# django cms reqiremnts
+												'Django==1.4.2',
       ],
      )
