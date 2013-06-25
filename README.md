@@ -1,5 +1,6 @@
 Djagazin - Django-cms based magazin
 -----------------------------------
+http://djagazin-dang.rhcloud.com/
 
 * Openshift ready
 * Semantic templating and content rendering (dev)
