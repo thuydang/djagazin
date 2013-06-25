@@ -1,12 +1,26 @@
-Djagazin - Django-cms based online magazin
---------------------------------
+Djagazin - Django-cms based magazin
+-----------------------------------
+
+* Openshift ready
+* Semantic templating and content rendering (dev)
+* Easy extendability
+
+Components:
+* cmsplugin-blog
+* cmsplugin-news
+
+cmsplugin-blog
+-----------------------------------
+
+
 
 News plugin for django-cms 2.x
---------------------------------
+-----------------------------------
+
 This plugin was forked from cmsplugin-news prior to be used in vfossorg project. We try to maintain the code sothat it's possible to contribute bug fixes to upstream project.
 
 Setup
------
+-----------------------------------
 
 * Install django-cms (if you haven't done so already)
 
