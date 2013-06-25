@@ -1,0 +1,3 @@
+$ git remote add origin https://thuydang@bitbucket.org/thuydang/vfossorg.git
+$ git push -u origin --all   # to push changes for the first time
+

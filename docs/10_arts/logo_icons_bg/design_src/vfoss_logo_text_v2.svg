@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="vfoss_logo_text_v2.svg"
+   inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_logo_text_v2.png"
+   inkscape:export-xdpi="53.828613"
+   inkscape:export-ydpi="53.828613">
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern3104"
+       id="pattern3114"
+       patternTransform="translate(0,2.1874998e-6)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern3095"
+       id="pattern3107"
+       patternTransform="translate(0,2.1874998e-6)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="300"
+       height="300"
+       patternTransform="translate(175.875,719.05176)"
+       id="pattern3095">
+      <g
+         transform="translate(-551.875,-715.05176)"
+         id="g3085">
+        <rect
+           y="715.05176"
+           x="551.875"
+           height="300"
+           width="300"
+           id="rect3087"
+           style="fill:#f9f9f9" />
+        <path
+           inkscape:export-ydpi="90.029999"
+           inkscape:export-xdpi="90.029999"
+           inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+           inkscape:connector-curvature="0"
+           id="path3089"
+           d="m 561.27717,859.49844 c -5.94094,67.90546 44.28958,127.76783 112.19504,133.70885 33.22929,2.90724 64.52615,-7.64776 88.52749,-27.13116 l -13.04352,-15.54471 c -19.93667,15.81915 -45.72941,24.33541 -73.08472,21.94217 -56.74727,-4.96473 -98.72369,-54.99026 -93.75895,-111.7376 4.96475,-56.74729 54.99029,-98.7237 111.73759,-93.75896 27.20748,2.38036 51.01429,15.12413 67.88542,33.99552 l 14.91297,-12.51351 C 756.43587,765.61476 727.77195,750.1718 694.986,747.30341 627.08053,741.36245 567.21812,791.59297 561.27717,859.49844 z"
+           style="fill:#ff7f2a" />
+        <path
+           inkscape:export-ydpi="90.029999"
+           inkscape:export-xdpi="90.029999"
+           inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+           sodipodi:nodetypes="ssccsssccss"
+           id="path3091"
+           d="m 771.58294,912.7475 c 22.18051,-47.56623 1.60197,-104.10525 -45.96424,-126.28578 -23.27632,-10.85391 -48.69962,-11.45894 -71.19572,-3.68283 l 2.47556,15.50117 c 18.59027,-6.19531 42.36254,-6.38425 61.5243,2.55103 39.75016,18.53579 56.94714,65.78407 38.41133,105.53427 -18.53582,39.75013 -65.7841,56.94714 -105.53427,38.41135 -19.0582,-8.88698 -32.92693,-24.37661 -40.16386,-42.47311 l -14.08506,5.12649 c 8.60833,21.851 25.28044,40.57248 48.24625,51.28168 47.56621,22.18049 104.10524,1.60191 126.28571,-45.96427 z"
+           style="fill:#164450"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:export-ydpi="90.029999"
+           inkscape:export-xdpi="90.029999"
+           inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+           sodipodi:nodetypes="ccccccc"
+           inkscape:connector-curvature="0"
+           id="path3093"
+           d="m 659.55486,824.08649 c 18.36632,69.12293 3.33532,11.1979 18.55454,68.13541 l 104.88092,-143.12482 62.58089,0 -164.56454,190.06045 -74.11169,-113.0927 c 25.19747,0 37.05077,-1.0453 52.65988,-1.97834 z"
+           style="fill:#217821;stroke:#000000;stroke-width:0.40561676px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="300"
+       height="300"
+       patternTransform="translate(175.875,719.05176)"
+       id="pattern3104">
+      <rect
+         id="rect3102"
+         y="-1.1368684e-13"
+         x="0"
+         height="300"
+         width="300"
+         style="fill:url(#pattern3107);stroke:none" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="300"
+       height="300"
+       patternTransform="translate(175.875,719.05176)"
+       id="pattern3111">
+      <rect
+         id="rect3109"
+         y="-1.1368684e-13"
+         x="0"
+         height="300"
+         width="300"
+         style="fill:url(#pattern3114);stroke:none" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.19607843"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="333.00304"
+     inkscape:cy="430.71545"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-center="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <path
+       style="fill:#ff7f2a"
+       d="m 40.973193,487.27249 c -7.32336,83.70643 54.59533,157.49825 138.301757,164.82161 40.96144,3.58366 79.54078,-9.42726 109.12701,-33.44434 L 272.32333,599.48799 C 247.74758,618.9881 215.95313,629.48604 182.2325,626.53586 112.28065,620.41587 60.536733,558.74985 66.656723,488.79801 72.776713,418.84616 134.44272,367.10223 204.39458,373.22222 c 33.53841,2.93424 62.88486,18.64337 83.68171,41.90594 l 18.3831,-15.42525 C 281.54349,371.54297 246.20972,352.50658 205.79481,348.97073 122.08838,341.64737 48.296553,403.56606 40.973193,487.27249 z"
+       id="path2987"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_81-70.png"
+       inkscape:export-xdpi="20.734751"
+       inkscape:export-ydpi="20.734751" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#164450"
+       d="m 300.21515,552.91208 c 27.34168,-58.63442 1.97474,-128.32954 -56.6597,-155.67124 -28.69252,-13.37954 -60.03157,-14.12535 -87.76229,-4.53979 l 3.0516,19.10813 c 22.91604,-7.63691 52.21989,-7.8698 75.84041,3.14463 48.99964,22.84891 70.19819,81.09141 47.34927,130.09107 -22.84892,48.99966 -81.09142,70.19819 -130.09107,47.34928 -23.49286,-10.9549 -40.5887,-30.04877 -49.50961,-52.3562 l -17.362517,6.31944 c 10.61141,26.93546 31.162957,50.01332 59.472677,63.21437 58.63443,27.34168 128.32955,1.97473 155.67123,-56.65969 z"
+       id="path2987-3"
+       sodipodi:nodetypes="ssccsssccss"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_81-70.png"
+       inkscape:export-xdpi="20.734751"
+       inkscape:export-ydpi="20.734751" />
+    <path
+       style="fill:#217821;stroke:#000000;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 162.11917,443.6205 c 22.64,85.20721 4.11141,13.80357 22.87201,83.98985 l 129.28571,-176.42857 77.14286,0 L 188.56261,585.46749 97.205823,446.05922 c 31.060697,0 45.672147,-1.28856 64.913347,-2.43872 z"
+       id="path3070"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_81-70.png"
+       inkscape:export-xdpi="20.734751"
+       inkscape:export-ydpi="20.734751" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3110"
+       style="font-size:45px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#004455;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+       transform="matrix(4,0,0,4,-1851.5027,-609.22111)"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_text_v2_500-182.png"
+       inkscape:export-xdpi="53.828613"
+       inkscape:export-ydpi="53.828613"><flowRegion
+         id="flowRegion3112"><rect
+           id="rect3114"
+           width="164.33437"
+           height="78.504745"
+           x="553.5636"
+           y="236.99791"
+           style="font-size:45px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#004455;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold" /></flowRegion><flowPara
+         id="flowPara3116">FOSS</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:123.19165039px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff7f2a;fill-opacity:1;stroke:none;font-family:Cretino;-inkscape-font-specification:Cretino Bold"
+       x="332.53656"
+       y="691.5343"
+       id="text3118"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1199241,0.89291765)"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_text_v2_500-182.png"
+       inkscape:export-xdpi="53.828613"
+       inkscape:export-ydpi="53.828613"><tspan
+         sodipodi:role="line"
+         id="tspan3120"
+         x="332.53656"
+         y="691.5343"
+         style="font-size:134.39089966px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cretino;-inkscape-font-specification:Cretino">Vietnam</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="651.5484"
+       y="93.556244"
+       id="text3890"
+       sodipodi:linespacing="125%"
+       transform="translate(0,308.2677)"
+       inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_text_v2_500-182.png"
+       inkscape:export-xdpi="53.828613"
+       inkscape:export-ydpi="53.828613"><tspan
+         sodipodi:role="line"
+         id="tspan3892" /></text>
+    <g
+       id="g4608"
+       transform="translate(374,-12)">
+      <rect
+         y="721.05176"
+         x="123.875"
+         height="300"
+         width="300"
+         id="rect3017"
+         style="fill:#f9f9f9" />
+      <path
+         inkscape:export-ydpi="90.029999"
+         inkscape:export-xdpi="90.029999"
+         inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+         inkscape:connector-curvature="0"
+         id="path2987-6"
+         d="m 133.27717,865.49844 c -5.94094,67.90546 44.28958,127.76783 112.19504,133.70885 33.22929,2.90721 64.52615,-7.64776 88.52749,-27.13116 l -13.04352,-15.54471 c -19.93667,15.81915 -45.72941,24.33541 -73.08472,21.94217 -56.74727,-4.96473 -98.72369,-54.99026 -93.75895,-111.7376 4.96475,-56.74729 54.99029,-98.7237 111.73759,-93.75896 27.20748,2.38036 51.01429,15.12413 67.88542,33.99552 l 14.91297,-12.51351 C 328.43587,771.61476 299.77195,756.1718 266.986,753.30341 199.08053,747.36245 139.21812,797.59297 133.27717,865.49844 z"
+         style="fill:#ff7f2a" />
+      <path
+         inkscape:export-ydpi="90.029999"
+         inkscape:export-xdpi="90.029999"
+         inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+         sodipodi:nodetypes="ssccsssccss"
+         id="path2987-3-7"
+         d="m 343.58294,918.7475 c 22.18051,-47.56623 1.60197,-104.10525 -45.96424,-126.28578 -23.27632,-10.85391 -48.69962,-11.45894 -71.19572,-3.68283 l 2.47556,15.50117 c 18.59027,-6.19531 42.36254,-6.38425 61.5243,2.55103 39.75016,18.53579 56.94714,65.78407 38.41133,105.53427 -18.53582,39.75013 -65.7841,56.94714 -105.53427,38.41135 -19.0582,-8.88698 -32.92693,-24.37661 -40.16386,-42.47311 l -14.08506,5.12649 c 8.60833,21.851 25.28044,40.57248 48.24625,51.28168 47.56621,22.18049 104.10524,1.60191 126.28571,-45.96427 z"
+         style="fill:#164450"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90.029999"
+         inkscape:export-xdpi="90.029999"
+         inkscape:export-filename="/home/td/workspace/vfossorg_pj/nogit/logos/working/vfoss_v2_250px.png"
+         sodipodi:nodetypes="ccccccc"
+         inkscape:connector-curvature="0"
+         id="path3070-6"
+         d="m 231.55486,830.08649 c 18.36632,69.12293 3.33532,11.1979 18.55454,68.13541 l 104.88092,-143.12482 62.58089,0 -164.56454,190.06045 -74.11169,-113.0927 c 25.19747,0 37.05077,-1.0453 52.65988,-1.97834 z"
+         style="fill:#217821;stroke:#000000;stroke-width:0.40561676px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         id="rect3116"
+         y="719.05176"
+         x="123.875"
+         height="300"
+         width="300"
+         style="fill:none;stroke:#000000;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
