@@ -1,0 +1,47 @@
+{% extends "_extend_theme_proxy.html" %}
+{% load cmsplugin_news_tags %}
+
+{% block main_content %}
+{% block dragoman_content %}
+{% endblock dragoman_content %}
+{% endblock main_content %}
+
+
+{% block sidebar_subscribe %}
+{{ block.super }}
+{% endblock sidebar_subscribe %}
+
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_cross_app_1 %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Latest Questions</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+{% endblock sidebar_cross_app_1 %}
+{# ------------------------------------------------------------ #}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_cross_app_2 %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Latest IT News</h3>
+  </div>
+  <div class="panel-body">
+		{% cmsplugin_news_show_entries %}
+  </div>
+</div>
+{% endblock sidebar_cross_app_2 %}
+{# ------------------------------------------------------------ #}
+
+
+{% block sidebar_tab_panel %}
+{{ block.super }}
+{% endblock sidebar_tab_panel %}
+
+{% block sidebar_bogus %}
+{% endblock %}

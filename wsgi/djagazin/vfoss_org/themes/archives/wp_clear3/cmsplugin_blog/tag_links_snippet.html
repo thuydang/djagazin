@@ -1,0 +1,9 @@
+{% load i18n %}
+
+<h2>{% trans "Tag Cloud" %}:</h2>
+
+	<div class="tags">
+  {% for tag in tags %}
+    <p><a href="{% url blog_archive_tagged tag=tag %}">{{ tag }}</a></p>
+  {% endfor %}
+	</div>

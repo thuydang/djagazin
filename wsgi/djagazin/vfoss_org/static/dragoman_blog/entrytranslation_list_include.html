@@ -1,0 +1,30 @@
+{% load i18n  %}
+{% for entry in object_list %}
+<div class="post clearfix" id="post-main-455">
+	<div class="entry clearfix">
+		<a href="{{ entry.get_absolute_url }}" rel="bookmark" title="Permanent Link to WP-Clear Tutorials Moved"> 
+			<img class="thumbnail" src="{{ STATIC_URL }}wp_clear3/static/images/def-thumb.jpg" alt="WP-Clear Tutorials Moved" title="WP-Clear Tutorials Moved">
+		</a>
+		<h3 class="post-title"><a href="{{ entry.get_absolute_url }}" rel="bookmark" title="Permanent Link to WP-Clear Tutorials Moved">{{ entry.title }}</a></h3>
+		<div class="meta">
+
+			<span class="meta-author">
+				<a href="http://wp-clear-new.solostreamsites.com/author/michaelpollock/" title="Posts by Michael Pollock" rel="author">Michael Pollock</a> | 
+			</span> 
+
+			<span class="meta-date">
+				{{ entry.pub_date|date:"d b Y" }}
+			</span> 
+
+			<span class="meta-comments">
+				| <a href="http://wp-clear-new.solostreamsites.com/2011/10/wp-clear-tutorials-moved/#comments" rel="bookmark" title="Comments for WP-Clear Tutorials Moved">0 Comments</a>
+			</span>
+
+		</div>
+		<p>You can find tutorials for this theme <strong><a href="http://www.solostream.com/category/premium-theme-tutorials/wp-clear-tutorials/">here</a></strong>.</p>
+		<p class="readmore"><a class="more-link" href="http://wp-clear-new.solostreamsites.com/2011/10/wp-clear-tutorials-moved/" rel="nofollow" title="Permanent Link to WP-Clear Tutorials Moved">Continue Reading</a></p>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+
+{% endfor %}

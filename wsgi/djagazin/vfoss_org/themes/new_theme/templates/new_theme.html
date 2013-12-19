@@ -1,0 +1,136 @@
+{% extends "new_theme/templates/_layout_new_theme.html" %}
+{% load i18n staticfiles %}
+{% load dragoman_blog_tags %}
+{# load i18n cmsplugin_blog_tags #}
+
+
+{% block main_content %}
+{# show block main_content of parent template #}
+{{ block.super }}
+
+PLUGIN EXTENDS NEW_THEME AND OVERWRITE THIS BLOCK WITH ITS INCLUDES
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+{% endblock %}
+
+{% block sidebar %}
+{# show block main_content of parent template #}
+{{ block.super }}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_subscribe %}
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Subscribe</h3>
+	</div>
+	<div class="panel-body">
+		<p>If you enjoyed this article, subscribe to receive more just like it.</p>
+
+		<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=michaelpollock', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+			<input value="michaelpollock" name="uri" type="hidden">
+			<input name="loc" value="en_US" type="hidden">
+			<p class="email-form">
+			<input class="sub" name="email" value="subscribe via email" onfocus="if (this.value == 'subscribe via email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'subscribe via email';}" type="text"><input value="submit" class="subbutton" type="submit">
+			</p>
+			<small>Privacy guaranteed. We never share your info.</small>
+		</form>
+
+		<a title="Subscribe via RSS Feed" href="http://wp-clear-new.solostreamsites.com/feed/"><img class="rss-sub" src="{% static "new_theme/static/images/feed.png" %}" alt="Subscribe via RSS Feed" align="top"></a>
+
+		<a target="_blank" title="Connect on Facebook" rel="external" href="http://www.facebook.com/michaeldpollock"><img class="facebook-sub" src="{% static "new_theme/static/images/facebook.png" %}" alt="Connect on Facebook" align="top"></a>
+
+		<a target="_blank" rel="external" title="Follow Me on Twitter" href="http://www.twitter.com/michaeldpollock"><img class="twitter-sub" src="{% static "new_theme/static/images/twitter.png" %}" alt="Follow Me on Twitter" align="top"></a>
+
+		<a target="_blank" title="Connect on Pinterest" rel="external" href="http://www.pinterest.com/michaeldpollock"><img class="pinterest-sub" src="{% static "new_theme/static/images/pinterest.png" %}" alt="Connect on Pinterest" align="top"></a>
+
+		<a target="_blank" title="Connect on Google Buzz" rel="external" href="https://plus.google.com/michael.savvysolo?rel=author"><img class="gplus-sub" src="{% static "new_theme/static/images/google-plus.png" %}" alt="Connect on Google Buzz" align="top"></a>
+
+		<a target="_blank" title="Connect on Flickr" rel="external" href="http://www.flickr.com/photos/13434854@N00"><img class="flickr-sub" src="{% static "new_theme/static/images/flickr.png" %}" alt="Connect on Flickr" align="top"></a>
+
+		<a target="_blank" title="Connect on LinkedIn" rel="external" href="http://www.linkedin.com/in/michaeldpollock"><img class="linkedin-sub" src="{% static "new_theme/static/images/linkedin.png" %}" alt="Connect on LinkedIn" align="top"></a>
+
+		<a target="_blank" title="Connect on YouTube" rel="external" href="http://www.youtube.com/user/mdp8593"><img class="youtube-sub" src="{% static "new_theme/static/images/youtube.png" %}" alt="Connect on YouTube" align="top"></a>
+	</div>
+</div>
+{% endblock sidebar_subscribe %}
+{# ------------------------------------------------------------ #}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_cross_app_1 %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cross App 1</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+{% endblock sidebar_cross_app_1 %}
+{# ------------------------------------------------------------ #}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_cross_app_2 %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cross App 2</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+{% endblock sidebar_cross_app_2 %}
+{# ------------------------------------------------------------ #}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_tab_panel %}
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<!-- Nav tabs -->
+		<ul class="nav nav-pills">
+			<li><a href="#comments" data-toggle="tab">Comments</a></li>
+			<li><a href="#authors" data-toggle="tab">Authors</a></li>
+			<li><a href="#archives" data-toggle="tab">Archives</a></li>
+		</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="comments">comments</div>
+			<div class="tab-pane fade" id="authors">
+				authors should be shown here!
+
+				{% blog_show_authors %}
+			
+			</div>
+			<div class="tab-pane fade" id="archives">archives</div>
+		</div>
+
+	</div>
+</div>
+{% endblock sidebar_tab_panel %}
+{# ------------------------------------------------------------ #}
+
+{# ------------------------------------------------------------ #}
+{% block sidebar_bogus %}
+PLUGIN EXTENDS NEW_THEME AND OVERWRITE THIS BLOCK WITH ITS INCLUDES
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+this is it this is it this is it this is it this is it this is it 
+{% endblock %}
+{# ------------------------------------------------------------ #}
+
+{% endblock sidebar %}
+
+

@@ -1,0 +1,44 @@
+{% load i18n placeholder_tags cmsplugin_blog_tags simple_translation_tags %}
+
+<div id="featposts-widget-2" class="widget featposts">
+	<div class="widget-wrap">
+		<h3 class="widgettitle"><span><a href="/blog">{% trans "VFOSS Blog" %}</a></span></h3>
+		<div class="cat-posts-widget textwidget">
+		
+			{% for entry in blog_entries|annotate_with_translations %}
+			{% with entry|get_preferred_translation_from_request:request as title %}
+				{% with entry.placeholders|choose_placeholder:"blog_excerpt" as excerpt %}
+
+				<!-- begin post -->
+			<div class="post">
+				<div class="entry clearfix">
+					<a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">
+						<img class="thumbnail" src="/static/wp_clear3/static/images/iStock_000004964402Small-150x150.jpg" alt="{{ title }}" title="{{ title }}">
+					</a>
+					<p class="post-title"><a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">{{ title }}</a></p>
+					<p>{% render_placeholder excerpt %}</p>
+				</div> 
+
+				<div class="meta">
+					<span class="meta-author">
+						<a href="http://wp-clear-new.solostreamsites.com/author/michaelpollock/" title="Posts by Michael Pollock" rel="author">Michael Pollock</a> |    
+					</span> 
+
+					<span class="meta-date">
+						March 28, 2011  </span> 
+
+					<span class="meta-comments">
+						| <a href="http://wp-clear-new.solostreamsites.com/2011/03/another-full-width-featured-image/#comments" rel="bookmark" title="Comments for Another Full-Width Featured Image">0 Comments</a>
+					</span>
+				</div>
+
+				<div style="clear:both;"></div>
+			</div>
+		<!-- end post -->
+
+		{% endwith %}
+		{% endwith %}
+		{% endfor %}
+	</div>
+</div>
+</div>
