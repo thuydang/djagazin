@@ -1,0 +1,52 @@
+{% load i18n placeholder_tags cmsplugin_blog_tags simple_translation_tags thumbnail %}
+{% for entry in object_list|annotate_with_translations %}
+    {% with entry|get_preferred_translation_from_request:request as title %}
+		{% with entry.placeholders|choose_placeholder:"blog_excerpt" as excerpt %}
+		{% with entry.placeholders|choose_placeholder:"blog_plugin" as picture %}
+		<!-- begin post -->
+		<div class="{% if forloop.counter|divisibleby:2 %}e post{% else %}o post{% endif %}"> 
+
+			<div class="post clearfix" >
+				<div class="entry clearfix">
+					<a href="{{ title.get_absolute_url }}" rel="bookmark" title="Permanent Link to WP-Clear Tutorials Moved">	
+						{% render_placeholder picture %}
+					</a>
+					<!--
+					<a href="{{ title.get_absolute_url }}" rel="bookmark" title="Permanent Link to WP-Clear Tutorials Moved">		<img class="thumbnail" src="{{ STATIC_URL }}wp_clear3/static/images/def-thumb.jpg" alt="{{ title }}" title="{{ title }}"></a>
+					-->
+
+					<h3 class="post-title"><a href="{{ title.get_absolute_url }}" rel="bookmark" title="{{ title }}">{{ title }}</a></h3>
+
+					<div class="meta">
+						<p>{{ entry|render_language_choices:request|safe }}</p>
+
+						<span class="meta-author">
+							<a href="{{ BASE_URL }}/author/{{ title.author.username }}" title="Posts by {{ title.author.username }}" rel="author">{{ title.author.username }}</a> | 
+						</span> 
+
+						<span class="meta-date">
+							{{ entry.pub_date|date:"d b Y" }}
+						</span> 
+
+						<span class="meta-comments">
+							| <a href="{{ title.get_absolute_url }}/#comments" rel="bookmark" title="Comments for {{ title }}">0 Comments</a>
+						</span>
+					</div>								
+
+
+					<p>
+						{% render_placeholder excerpt %}
+					</p>
+
+					<p class="readmore"><a class="more-link" href="{{ title.get_absolute_url }}" rel="nofollow" title="Permanent Link to WP-Clear Tutorials Moved">Continue Reading</a></p>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end post -->
+
+		{% endwith %}
+		{% endwith %}
+		{% endwith %}
+		{% endfor %}

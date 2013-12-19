@@ -1,0 +1,51 @@
+{% extends "cmsplugin_blog/cmsplugin_blog_base.html" %}
+{% load i18n cmsplugin_blog_tags %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="alternate" type="application/rss+xml" title="RSS feed for author {{ author|escape }}" href="{% if request.LANGUAGE_CODE %}/{{ request.LANGUAGE_CODE }}{% endif %}{% url blog_rss_author author %}" />
+<link rel="alternate" type="application/rss+xml" title="RSS feed for author {{ author|escape }} (any language)" href="{% if request.LANGUAGE_CODE %}/{{ request.LANGUAGE_CODE }}{% endif %}{% url blog_rss_any_author author %}" />
+{% endblock extrahead %}
+
+
+{% block contentleft %}
+
+
+<div class="clearfix" id="content">
+
+	<p id="breadcrumbs">You are here: <a href="http://wp-clear-new.solostreamsites.com">Home</a> » <a href="http://wp-clear-new.solostreamsites.com/page-templates/">Page Templates</a> » <strong>Archives by Month</strong></p>
+	<div class="banner468"><a href="#"><img alt="banner ad" src="/wp-content/themes/wp-clear/images/banner468.gif"></a></div>
+
+	<div class="post entry clearfix">
+							
+		<h1 class="page-title">{% trans "Entries by" %} {{ author }}</h1>
+
+		<div class="archive-content" id="archives-month">
+
+			{% if object_list %}
+		   {% include "cmsplugin_blog/entry_list_include.html" %}
+			{% else %}
+				<p>{% trans "No entries by" %} {{ author }}</p>
+			{% endif %}
+			
+		</div>
+
+	</div>
+
+</div>
+    
+                                         
+{% endblock %}
+
+
+{% block authors %}
+{% render_author_links %}
+{% endblock %}
+
+{% block archives %}
+{% render_month_links %}
+{% endblock %}
+
+{% block tag_cloud %}
+{% render_tag_links %}
+{% endblock %}

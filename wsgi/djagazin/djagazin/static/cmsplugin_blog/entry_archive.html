@@ -1,0 +1,46 @@
+{% extends "cmsplugin_blog/cmsplugin_blog_base.html" %}
+{% load i18n cmsplugin_blog_tags %}
+
+
+{# block contentleft #}
+
+{% block contentleft %}
+{% block entries_list_1 %}
+
+{#<h1>{% trans "Latest entries" %}</h1>#}
+<h2 class="feat-title"><span>{% trans "Latest entries" %}</span></h2>
+{% with latest as object_list %}
+{% if object_list %}
+   {% include "cmsplugin_blog/entry_list_include.html" %}
+{% else %}
+	<p>{% trans "No entries" %}</p>
+{% endif %}
+{% endwith %}
+
+{% endblock %}
+{% endblock %}
+
+
+{# block contentright #}
+
+{# render list of news entries #}
+{% block entries_widget %}
+  {% get_latest_entries 4 as news_entries %}
+  {% if news_entries %}
+    {# include "cmsplugin_blog/widget_latest_entry_include.html" #}
+  {% else %}
+    <p>{% trans "No entries" %}</p>
+  {% endif %}
+{% endblock entries_widget %}
+
+	{% block authors_list %}
+		{% render_author_links %}
+	{% endblock %}
+	
+	{% block archives %}
+		{% render_month_links %}
+	{% endblock %}
+
+	{% block tag_cloud %}
+		{% render_tag_links %}
+	{% endblock %}

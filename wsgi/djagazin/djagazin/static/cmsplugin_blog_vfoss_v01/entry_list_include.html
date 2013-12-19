@@ -1,0 +1,21 @@
+{% load i18n placeholder_tags cmsplugin_blog_tags simple_translation_tags %}
+{% for entry in object_list|annotate_with_translations %}
+    {% with entry|get_preferred_translation_from_request:request as title %}
+		{% with entry.placeholders|choose_placeholder:"excerpt" as excerpt %}
+		<!-- begin post -->
+		<div class="{% if forloop.counter|divisibleby:2 %}e post{% else %}o post{% endif %}"> 
+			<a href="{{ title.get_absolute_url }}"><img src="{{ STATIC_URL }}vfoss_org_v01/static/images/_thumb.jpg" alt="{{ title }}"></a>
+			<h2><a href="{{ title.get_absolute_url }}">{{ title }}</a></h2>
+			<p>{{ entry.pub_date|date:"d b Y" }}<br/>
+			{{ entry|render_language_choices:request|safe }}
+			</p>
+			<p>Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.</p>
+			<p class="readmore">[ <a href="{{ title.get_absolute_url }}">read more</a> ]</p>
+			<div class="break"></div>
+		</div>
+		<!-- end post -->
+
+		{% render_placeholder excerpt %}
+		{% endwith %}
+		{% endwith %}
+		{% endfor %}

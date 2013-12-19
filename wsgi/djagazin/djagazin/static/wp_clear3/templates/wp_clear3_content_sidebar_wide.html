@@ -1,0 +1,27 @@
+{% extends "wp_clear3/templates/_layout_wp_clear3_content_sidebar_wide.html" %}
+{% load i18n %}
+{# load i18n cmsplugin_blog_tags #}
+
+{# ALSO TEMPLATE FOR HOME PAGE #}
+
+{% block contentleft %}
+{{ block.super }}
+
+
+	{% block featured_entries_1 %}
+	{# empty #}
+	{% endblock featured_entries_1 %}
+
+	{% block featured_entries_2 %}
+	{# empty #}
+	{% endblock featured_entries_2 %}
+{% endblock contentleft %}
+
+{# contentright #}
+
+{# custom subscribe box #}
+{% block subscribebox %}
+{% include "wp_clear3/templates/_include_subscribebox.html" %}
+{% endblock subscribebox %}							
+
+
