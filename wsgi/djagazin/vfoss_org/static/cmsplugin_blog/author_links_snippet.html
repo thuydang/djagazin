@@ -1,9 +1,0 @@
-{% load i18n %}
-
-
-		<ul>
-			{% for author in authors %}
-			<li><a title="{{ author }}" href="{% url blog_archive_author author=author %}">{{ author }}</a></li>
-			{% endfor %}
-		</ul>
-
