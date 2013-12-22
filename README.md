@@ -7,7 +7,7 @@ http://djagazin-dang.rhcloud.com/
 * Easy extendability
 
 Components:
-* cmsplugin-blog
+* dragoman-blog
 * cmsplugin-news
 
 cmsplugin-blog
