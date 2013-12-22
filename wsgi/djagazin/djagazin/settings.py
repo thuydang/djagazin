@@ -59,7 +59,7 @@ LANGUAGES = [
 DATABASES = {
 		'default': {
 			'ENGINE': 'django.db.backends.sqlite3',
-			'NAME': os.path.join(PROJECT_DIR, 'mycms.db'),
+			'NAME': os.path.join(PROJECT_DIR, 'sqlite3.db'),
 			#'ENGINE': 'django.db.backends.mysql',
 			#'NAME': 'thuydang_vfosscms',
 			#'USER': 'vfosscmsdb',
