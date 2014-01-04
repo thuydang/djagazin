@@ -16,26 +16,46 @@
 			<li class="active"><a href="{{ BASE_URL }}/newswire/">Home</a></li>
       <li><a href="{{ BASE_URL }}/blog/">Blogs</a></li>
     </ul>
-    <form class="navbar-form navbar-right form-inline" role="login">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Username">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Password">
-      </div>
+
+		<div class="pull-right">
+			<a class="btn btn-primary" style="margin:10px 5px 5px 10px;" href="http://www.bootstraptor.com">Sign in</a>
+			<a class="btn btn-primary" style="margin:10px 10px 5px 0px;" href="http://www.bootstraptor.com">Sign up</a>
+			<div class="btn-group">
+				<button class="btn btn-mini">En</button>
+				<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" style="min-width:30px;">
+					<!-- dropdown menu links -->
+					<li><a href="">Vn</a></li>
+					<li><a href="">De</a></li>
+					<li><a href="">Fr</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 
+		<form class="navbar-form navbar-right form-inline" role="login">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Username">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Password">
+			</div>
 			<div class="checkbox">
-				
+
 				<label>
 					<input type="checkbox"> Remember me
 				</label>
 			</div>
-      <button type="login" class="btn btn-primary">Login</button>
-    </form>
+			<button type="login" class="btn btn-primary">Login</button>
+		</form>
+		-->	
 		<ul class="nav navbar-nav navbar-left">
 			<li><a href="{{ BASE_URL }}/projects/">Open Ideas</a></li>
 			<li><a href="{{ BASE_URL }}/ask/">Ask</a></li>
 		</ul>
-  </div><!-- /.navbar-collapse -->
+	</div><!-- /.navbar-collapse -->
 </nav>
 
 
